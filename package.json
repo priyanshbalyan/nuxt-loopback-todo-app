@@ -11,7 +11,8 @@
     "posttest": "npm run lint && npm audit",
     "client": "cd client && npm run dev",
     "generate": "cd client && npm run generate",
-    "install": "cd client && npm install && npm run generate"
+    "install": "cd client && npm install && npm run generate",
+    "console": "loopback-console"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -21,13 +22,16 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
     "loopback-connector-mongodb": "^4.2.0",
+    "loopback-console": "^1.1.0",
     "morgan": "^1.9.1",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
+    "@loopback/testlab": "^1.5.0",
     "eslint": "^3.17.1",
-    "eslint-config-loopback": "^8.0.0"
+    "eslint-config-loopback": "^8.0.0",
+    "mocha": "^6.1.4"
   },
   "repository": {
     "type": "",

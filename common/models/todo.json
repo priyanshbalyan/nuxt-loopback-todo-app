@@ -3,6 +3,9 @@
   "plural": "todos",
   "base": "PersistedModel",
   "idInjection": true,
+  "mixins": {
+    "DisableRemotes": true
+  },
   "options": {
     "validateUpsert": true
   },

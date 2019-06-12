@@ -35,3 +35,6 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+
+process.on('uncaughtException', console.log);
+process.on('unhandledRejection', console.log);

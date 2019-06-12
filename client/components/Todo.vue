@@ -73,20 +73,17 @@ export default {
   methods: {
     getTodoList() {
       this.loading = true    
-      axios
-        .get(BASE_URL + '/api/todos')
-        .then((resp) => {
-          this.loading = false
-          if(typeof resp.data == 'object')
-            this.todos = resp.data
-          else
-            this.error = "API Error"
-        })
-        .catch((err) => {
-          console.log(err)
-          this.loading = false
-          this.error = err.message
-        })
+      axios.get(BASE_URL + '/api/todos').then((resp) => {
+        this.loading = false
+        if(typeof resp.data == 'object')
+          this.todos = resp.data
+        else
+          this.error = "API Error"
+      }).catch((err) => {
+        console.log(err)
+        this.loading = false
+        this.error = err.message
+      })
     },
     deleteTodo(id, index){
       axios.delete(BASE_URL + '/api/todos/'+id).catch(err=>console.log(err)).finally(()=>{
