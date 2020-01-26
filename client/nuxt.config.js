@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  env:{
+  env: {
     BASE_URL: process.env.BASE_URL || ''
   },
   mode: 'spa',

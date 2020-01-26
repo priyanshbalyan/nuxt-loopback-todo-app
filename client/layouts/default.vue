@@ -11,17 +11,20 @@
       </v-container>
     </v-content>
     <nuxt-link to="/add">
-    <v-btn
-      color="pink"
-      dark
-      small
-      bottom
-      right
-      fixed
-      fab>
-        <v-icon>add</v-icon>
+      <v-btn
+        color="pink"
+        dark
+        small
+        bottom
+        right
+        fixed
+        fab
+      >
+        <v-icon>
+          add
+        </v-icon>
       </v-btn>
-      </nuxt-link>
+    </nuxt-link>
   </v-app>
 </template>
 
